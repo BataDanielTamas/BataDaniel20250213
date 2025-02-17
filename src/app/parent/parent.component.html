@@ -1,1 +1,5 @@
 <p>parent works!</p>
+<input [(ngModel)]="a" placeholder="A">
+<input [(ngModel)]="b" placeholder="B">
+<App-child [a]="a" [b]="b" (result)="setResult($event)"></App-child>
+<p>Result: {{ result }}</p>
